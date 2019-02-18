@@ -7,10 +7,10 @@ fn main() {
     println!("Guess the number!");
 
     let secret_number = seed_solution();
-    let mut num_guesses = 0;
+    let num_guesses = 0;
 
     loop {
-        num_guesses += 1;
+        let num_guesses = num_guesses + 1;
 
         let guess = next_guess();
         println!("You guess: {}", guess);
